@@ -1,0 +1,421 @@
+/* Aditional CSS file for my "personal needs" */
+
+/* Adding fonts */
+@font-face {
+	font-family: "CODEBold";
+	src: url(../fonts/CODEBold.otf);
+}
+@font-face {
+	font-family: "CODELight";
+	src: url(../fonts/CODELight.otf);
+}
+@font-face {
+	font-family: "Housegrind";
+	src: url(../fonts/Housegrind.ttf) format("truetype");
+}
+@font-face {
+	font-family: "BebasNeue";
+	src: url(../fonts/BebasNeue.otf);
+}
+@font-face {
+	font-family: "Aliquam";
+	src: url(../fonts/Aliquam.ttf) format("truetype");
+}
+@font-face {
+	font-family: "AliquamREG";
+	src: url(../fonts/AliquamREG.ttf) format("truetype");
+}
+
+/* CSS */
+
+/* 
+Making the website font variable white 
+& Background color black
+& Hiding the scrollbars 
+& Setting the body height
+*/
+body{
+	color: white;
+	background-color: black;
+	min-height: 100%;
+	height: 3012px;
+	/* overflow:hidden; */
+}
+
+/* Setting the page background */
+.frontpage{
+	background: url(../img/blurrysf.jpg) no-repeat center left fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Making the name signature-like */
+.navbar .brand {
+	font-family: "Housegrind", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-text-stroke: 0.5px;
+	font-size: 35px;
+}
+
+/* Changing the fonts */
+.navbar {
+	font-family: "CODEBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+
+	/* Fixing the navbar */
+	position: absolute;
+}
+
+.frontpage>.container{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+/* Adjusting the navbar height */
+.navbar .container,
+.nav{
+	height: 70px;
+	line-height: 70px;
+	font-size: 30px;
+}
+
+.navbar .container li{
+	line-height: 70px;
+}
+
+/* Making the links on the navbar have borders */
+.navbar li{
+	border-left: 1px solid #444;
+	border-right: 1px solid #111;
+}
+
+/* Making the last link on the navbar have a right gray border */
+#lastlink{
+	border-right: 1px solid #444;
+}
+
+/* Making the buttons glow when hovered */
+
+.transition,
+#bookmark,
+.brand{
+	/*Transition*/
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+}
+
+#bookmark:hover{
+	background-color: #2b2b2b;
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+.brand:hover{
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+/* Positioning and Styling the social icons */
+
+.social{
+	z-index: 9999;
+	position: absolute;
+	display: block;
+	top: 80px;
+	list-style: none;
+	margin: 30px 0 0 0;
+}
+
+.social li {
+	display: inline-block;
+}
+
+/* Positioning and styling the main jumbotron */
+
+.jumbotron{
+	font-family: "BebasNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 150px;
+	text-align: center;
+}
+
+#iwritecode{
+	line-height: 100px;
+	font-size: 100px;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#jumbotext{
+	line-height: 30px;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+/* Styling for the about me page link */
+
+.aboutmelink{
+	margin-top: 170px;
+	font-family: "CODEBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	line-height: 0px;
+}
+
+.aboutmelink a,
+.aboutmelink a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+#aboutmelinktext{
+	font-size: 30px;
+}
+
+/* Styling for the about me part of the page */
+
+.aboutme{
+	min-height: 680px;
+	position: relative;
+	display: block;
+	top: 150px;
+	background-color: #161616;
+	color: #fff;
+	font-size: .9em;
+}
+
+#aboutmetitle{
+	position: relative;
+	top: -25px;
+	margin: auto;
+	text-align: center;
+	background-image: url(../img/about-title-bg.png);
+	padding: 25px 35px;
+	-webkit-transform-origin: 150px 86px 0;
+	-moz-transform-origin: 150px 86px 0;
+	-ms-transform-origin: 150px 86px 0;
+	-o-transform-origin: 150px 86px 0;
+	transform-origin: 150px 86px 0;
+	width: 300px;
+	height: 60px;
+
+	/* Font */
+
+	font-family: "CODEBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 60px;
+	font-size: 60px;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+
+/* Styling for the small intro text, NOT THE 3 PARAGRAPHS */
+#aboutmetext{
+	position: relative;
+	margin: auto;
+	width: 78%;
+
+	/* Text */
+	font-family: "Aliquam", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 38px;
+	line-height: 38px;
+	color: #eaeaea;
+	-webkit-text-stroke: 0.3px gray;
+	
+	text-shadow: 2px 2px 1px #000;
+	letter-spacing: 2px;
+}
+
+#paragraphtitle{
+	text-align: center;
+	font-family: "CODEBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 32px;
+}
+
+/* Styling for the 3 paragraphs */
+.paragraphs{
+	position: relative;
+	top: 50px;
+
+	text-align: center;
+	font-family: "AliquamREG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 23px;
+	color: #cecece;
+	-webkit-text-stroke: 0.0px;
+	line-height: 25px;
+}
+
+.paragraph1{
+	position: relative;
+	left: -50px;
+}
+
+.paragraph2{
+	position: relative;
+	left: -10px;
+}
+
+.paragraph3{
+	position: relative;
+	left: 30px;
+}
+
+/* Styling for the my work section */
+
+.mywork{
+	min-height: 570px;
+	position: relative;
+	display: block;
+	top: 300px;
+	background-color: #161616;
+	color: #fff;
+	font-size: .9em;
+}
+
+.thumbnails li{
+	background-color: #cecece;
+	width: 70%;
+
+	font-family: "AliquamREG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 23px;
+	color: black;
+	-webkit-text-stroke: 0.0px;
+	line-height: 25px;
+}
+
+.thumbnailscontainer{
+	position: relative;
+	margin: auto;
+	width: 80%;
+}
+
+/* CSS for the gradient background */
+
+#gradient-background,
+.thumbnails li{
+	/* fallback */
+	background-color: #2F2727;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	/* Safari 4-5, Chrome 1-9 */
+	/* Can't specify a percentage size? Laaaaaame. */
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+
+	/* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+}
+
+/* Styling for the contact section */
+
+.contact{
+	min-height: 570px;
+	position: relative;
+	display: block;
+	top: 470px;
+	background-color: #161616;
+	color: #fff;
+	font-size: .9em;
+}
+
+.contactinfo{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	top: 50px;
+
+	/* Font Styling */
+	font-family: "AliquamREG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 1px 1px 1px #000;
+	color: #cecece;
+	-webkit-text-stroke: 0.0px;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+/* Styling for the footer */
+
+.site-footer {
+	position: absolute;
+	width: 100%;
+	top: 2970px;
+	height: 142px;
+	border-top: 1px solid black; 
+	/* Background */
+	background: #1c1c1c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1c1c1c 0%, #000000 100%, #131313 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1c1c1c), color-stop(100%,#000000), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1c1c1c 0%,#000000 100%,#131313 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1c1c1c 0%,#000000 100%,#131313 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1c1c1c 0%,#000000 100%,#131313 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1c1c1c 0%,#000000 100%,#131313 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+	
+
+	/* Font */
+	font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #cecece;
+}
+
+.site-footer .container{
+	position: relative;
+	top: 20px;
+	left: 50px;
+}
+
+.footertext,
+.footerlinks{
+	position: relative;
+	top: 40px;
+}
+
+.footertext{
+	font-family: "AliquamREG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.footercontacts{
+	position: relative;
+	top: 20px;
+}
+
+/* Linkbox Styling */
+.linkbox{
+	position: fixed;
+	top: 100px;
+	left: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #1E1E1E;
+
+	font-family: "CODEBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.linkbox a{
+	text-decoration: none;
+	color: white;
+}
+
+.linkboxlink:hover{
+	background-color: #4c4c4c;
+}
+
+.linkboxlink a:hover{
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	text-decoration: none;
+	color: white;
+}
